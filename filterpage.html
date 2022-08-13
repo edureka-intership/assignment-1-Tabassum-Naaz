@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./filterpage.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <title>Filter Page</title>
+
+</head>
+
+<body>
+
+    <!-- Top Border -->
+
+    <div class="top-border d-flex justify-content-between align-items-center">
+        <div class="logo">
+            <b>e!</b>
+        </div>
+        <div class="buttons">
+            <button type="button" class="btn btn-outline-light btn-lg button1">Login</button>
+            <button type="button" class="btn btn-outline-light btn-lg button2">Create an account</button>
+        </div>
+    </div>
+
+    <!-- Main Heading -->
+
+    <div class="container">
+        <div class="row">
+            <div class="main-heading px-sm-0 mt-sm-3 mb-sm-4 fw-bold lh-sm">Breakfast Places in Mumbai</div>
+        </div>
+
+        <!--Filters-->
+
+        <div class="row">
+            <div
+                class=" filter-box col-lg-3 col-md-4 col-sm-12 pt-md-2 pb-sm-4 pt-sm-4 px-md-3 me-md-5 mb-sm-4 align-self-md-start">
+                <div class="row justify-content-sm-center ">
+                    <div class="col-md-11 col-sm-5 order-sm-1 py-md-0 py-sm-2 m-sm-2 media-q">
+                        <div class="ps-0 fw-bold size-1 color-1">
+                            Filters
+                        </div>
+                        <div class="my-sm-2 fw-semibold size-2 color-1">Select Location</div>
+                        <select class="form-select-sm w-100 border border-1 rounded-0 color-2"
+                            aria-label="select-location" id="location">
+                            <option value="">Select Location</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+
+                        <!-- Cuisine -->
+
+                    </div>
+                    <div class="col-md-11 col-sm-5 order-md-2 order-sm-3 py-md-0 py-sm-2 m-sm-2 media-q">
+                        <div class="my-sm-2 fw-semibold size-2 color-1">Cuisine</div>
+                        <div class="form-check">
+                            <input class="form-check-input rounded-0" type="checkbox" value="north-indian"
+                                id="north-indian">
+                            <label class="form-check-label size-2 color-2" for="north-indian">
+                                North Indian
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input rounded-0" type="checkbox" value="south-indian"
+                                id="south-indian">
+                            <label class="form-check-label size-2 color-2" for="south-indian">
+                                South Indian
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input rounded-0" type="checkbox" value="chinese" id="chinese">
+                            <label class="form-check-label size-2 color-2" for="chinese">
+                                Chinese
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input rounded-0" type="checkbox" value="fast-food" id="fast-food">
+                            <label class="form-check-label size-2 color-2" for="fast-food">
+                                Fast Food
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input rounded-0" type="checkbox" value="street-food"
+                                id="street-food">
+                            <label class="form-check-label size-2 color-2" for="street-food">
+                                Street Food
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Cost -->
+
+                    <div class="col-md-11 col-sm-5 order-md-3 order-sm-4 py-md-0 py-sm-2 m-sm-2 media-q">
+                        <div class="my-sm-2 fw-semibold size-2 color-1">Cost For Two</div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="cost-for-two" id="cost1">
+                            <label class="form-check-label size-2 color-2" for="cost1">
+                                Less than ` 500
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="cost-for-two" id="cost2">
+                            <label class="form-check-label size-2 color-2" for="cost2">
+                                ` 500 to ` 1000
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="cost-for-two" id="cost3">
+                            <label class="form-check-label size-2 color-2" for="cost3">
+                                ` 1000 to ` 1500
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="cost-for-two" id="cost4">
+                            <label class="form-check-label size-2 color-2" for="cost4">
+                                ` 1500 to ` 2000
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="cost-for-two" id="cost5">
+                            <label class="form-check-label size-2 color-2" for="cost5">
+                                ` 2000+
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Sort -->
+
+                    <div class="col-md-11 col-sm-5 order-md-4 order-sm-2 py-md-0 py-sm-2 m-sm-2 media-q">
+                        <div class="my-md-2 fw-bold size-1 color-1">Sort</div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="sort" id="low-high">
+                            <label class="form-check-label size-2 color-2" for="low-high">
+                                Price low to high
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="sort" id="high-low">
+                            <label class="form-check-label size-2 color-2" for="high-low">
+                                Price high to low
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Filter Card: 1 -->
+
+            <div class="col-lg-8 col-md-7 col-sm-12 justify-content-sm-center">
+                <div class="row filter-card pt-sm-3 pb-sm-4 mb-sm-4">
+                    <div class="row m-sm-auto">
+                        <div class="fc-image col-lg-3 col-md-6"><img src="./Breakfast.jpg" class="rounded-4"
+                                alt="Idli and sambar"></div>
+                        <div class="col-lg-7 mt-md-0 mt-sm-2">
+                            <div class="fc-heading fw-semibold color-1">The Big Chill Cakery</div>
+                            <div class="fw-semibold size-3 color-1">FORT</div>
+                            <div class="text-truncate size-3 color-3">Shop 1, Plot D, Samruddhi Complex, Chincholi,
+                                Mumbai-400002,
+                                Maharashtra
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <hr class="mx-sm-3 mt-sm-4 color-2" />
+                    </div>
+                    <div class="row m-sm-auto">
+                        <div class="row my-md-2">
+                            <div class="col-lg-3 col-sm-7 mx-lg-2 size-3 color-3">CUISINES:</div>
+                            <div class="col-lg-2 col-sm-5 mx-lg-2 fw-semibold size-3 color-1">Bakery</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3 col-sm-7 mx-lg-2 size-3 color-3">COST FOR TWO:</div>
+                            <div class="col-lg-2 col-sm-5 mx-lg-2 fw-semibold size-3 color-1">₹700</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Filter Card: 2 -->
+
+                <div class="row filter-card pt-sm-3 pb-sm-4 mb-sm-4">
+                    <div class="row m-sm-auto">
+                        <div class="fc-image col-lg-3 col-md-6"><img src="./Breakfast.jpg" class="rounded-4"
+                                alt="Idli and sambar">
+                        </div>
+                        <div class="fc-details col-lg-7 mt-md-0 mt-sm-2">
+                            <div class="fw-semibold fc-heading">The Bake Shop</div>
+                            <div class="fw-semibold size-3 color-1">FORT</div>
+                            <div class="text-truncate size-3 color-3">Shop 1, Plot D, Samruddhi Complex, Chincholi,
+                                Mumbai-400002,
+                                Maharashtra
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <hr class="mx-sm-3 mt-sm-4 color-2" />
+                    </div>
+                    <div class="row m-sm-auto">
+                        <div class="row my-md-2">
+                            <div class="col-lg-3 col-sm-7 mx-lg-2 size-3 color-3">CUISINES:</div>
+                            <div class="col-lg-2 col-sm-5 mx-lg-2 fw-semibold size-3 color-1">Bakery</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3 col-sm-7 mx-lg-2 size-3 color-3">COST FOR TWO:</div>
+                            <div class="col-lg-2 col-sm-5 mx-lg-2 fw-semibold size-3 color-1">₹700</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Page Navigation -->
+
+                <div class="row mb-sm-3">
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination pagination-sm justify-content-center hstack gap-2 my-sm-auto">
+                            <li class="page-item" disabled>
+                                <a class="page-link rounded-3 disabled" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&lt;</span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link rounded-3 border active" href='#'>1</a></li>
+                            <li class="page-item"><a class="page-link rounded-3" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link rounded-3" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link rounded-3" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link rounded-3" href="#">5</a></li>
+                            <li class="page-item">
+                                <a class="page-link rounded-3" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&gt;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

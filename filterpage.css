@@ -1,0 +1,119 @@
+/* Top Border */
+
+.top-border {
+    height: 65px;
+    background-color: #CE0505;
+}
+
+.logo {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    font-size: 25px;
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #EB2929;
+    background-color: white;
+    text-align: center;
+    margin-left: 8%;
+}
+
+.buttons {
+    margin-right: 8%;
+}
+
+.btn {
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+.button1 {
+    border-style: hidden;
+    margin-right: 8px;
+}
+
+body {
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main-heading {
+    font-size: 40px;
+    color: #192F60;
+}
+
+/* Filters */
+
+.filter-box {
+    border: hidden;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.size-1 {
+    font-size: 18px;
+}
+
+.size-2 {
+    font-size: 14px;
+}
+
+.color-1 {
+    color: #192F60;
+}
+
+.color-2 {
+    color: #8C96AB;
+}
+
+/* Filter Cards */
+
+.filter-card {
+    border: hidden;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+img[src="./Breakfast.jpg"] {
+    height: 120px;
+    width: 120px;
+}
+
+
+.fc-heading {
+    font-size: 30px;
+    color: #192F60;
+}
+
+.size-3 {
+    font-size: 16px;
+}
+
+.color-3 {
+    color: #636F88;
+}
+
+.c {
+    border: dotted 2px orange;
+}
+
+/* Page Navigation */
+
+.page-link {
+    color: #8C96AB;
+    border: solid 1px;
+}
+
+.page-link:hover,
+.page-link.active {
+    color: white;
+    background-color: #8C96AB;
+    border-style: white;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+    .media-q {
+        border: hidden;
+        box-shadow: 0px 3px 6px #00000029;
+    }
+
+    .main-heading{
+        text-align: center;    
+    }
+}
